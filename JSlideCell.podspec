@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "JSlideCell"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "slide your cell gently"
 
   # This description is used to generate tags and improve search results.
@@ -38,7 +38,7 @@ Pod::Spec.new do |s|
   #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
   #
 
- # s.license      = "MIT"
+  # s.license      = "MIT"
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
 
@@ -63,7 +63,7 @@ Pod::Spec.new do |s|
   #  the deployment target. You can optionally include the target after the platform.
   #
 
-  s.platform     = :ios
+  # s.platform     = :ios
   s.platform     = :ios, "8.0"
 
   #  When using multiple platforms
