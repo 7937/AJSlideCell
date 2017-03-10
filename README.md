@@ -1,4 +1,4 @@
-## JSlideCell
+## AJSlideCell
 
 ![demo](https://github.com/7937/JSlideCell/blob/master/Demo.gif)
 
