@@ -6,12 +6,12 @@
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "JSlideGestureRecognizer.h"
+#import "AJSlideGestureRecognizer.h"
 
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 #define CellHeight self.cell.frame.size.height
 
-@interface JSlideGestureRecognizer()<UIGestureRecognizerDelegate>{
+@interface AJSlideGestureRecognizer()<UIGestureRecognizerDelegate>{
     CGFloat currentX;
     CGRect beginCell;
 }
@@ -22,7 +22,7 @@
 
 @end
 
-@implementation JSlideGestureRecognizer
+@implementation AJSlideGestureRecognizer
 
 - (instancetype)initWithArray:(NSMutableArray *)textArray{
     if (self = [super init]) {
@@ -31,7 +31,7 @@
         
         _tableView = [UITableView new];
         _cell = [UITableViewCell new];
-        _slideView = [JSlideView new];
+        _slideView = [AJSlideView new];
         self.didTriggerDoneBlock = [self doneTriggerBlock:textArray];
         self.didTriggerDeleteBlock = [self deleteTriggerBlock:textArray];
 

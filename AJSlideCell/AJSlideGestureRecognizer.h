@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JSlideView.h"
+#import "AJSlideView.h"
 
-@interface JSlideGestureRecognizer: UIPanGestureRecognizer
+@interface AJSlideGestureRecognizer: UIPanGestureRecognizer
 
 typedef void(^SlideActionBlock)(UITableView *tableView, NSIndexPath *indexPath);
 
 @property (nonatomic, copy) SlideActionBlock didTriggerDoneBlock;
 @property (nonatomic, copy) SlideActionBlock didTriggerDeleteBlock;
-@property (nonatomic, strong)JSlideView *slideView;
+@property (nonatomic, strong)AJSlideView *slideView;
 
 - (instancetype)initWithArray:(NSMutableArray *)textArray;
 

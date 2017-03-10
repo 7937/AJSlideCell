@@ -12,9 +12,9 @@
 		A53A87CB1E6E7F0000A9B202 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A87C91E6E7F0000A9B202 /* Main.storyboard */; };
 		A53A87CD1E6E7F0000A9B202 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A53A87CC1E6E7F0000A9B202 /* Assets.xcassets */; };
 		A53A87D01E6E7F0000A9B202 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A53A87CE1E6E7F0000A9B202 /* LaunchScreen.storyboard */; };
-		A53A87E91E6E813000A9B202 /* JSlideGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A53A87E51E6E813000A9B202 /* JSlideGestureRecognizer.m */; };
-		A53A87EA1E6E813000A9B202 /* JSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A53A87E71E6E813000A9B202 /* JSlideView.m */; };
 		A53A87ED1E6E834000A9B202 /* TableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A53A87EC1E6E834000A9B202 /* TableViewController.m */; };
+		A54D91C51E728EFB0019805B /* AJSlideGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = A54D91C21E728EFB0019805B /* AJSlideGestureRecognizer.m */; };
+		A54D91C61E728EFB0019805B /* AJSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = A54D91C41E728EFB0019805B /* AJSlideView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,12 +26,12 @@
 		A53A87CC1E6E7F0000A9B202 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A53A87CF1E6E7F0000A9B202 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A53A87D11E6E7F0000A9B202 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A53A87E41E6E813000A9B202 /* JSlideGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSlideGestureRecognizer.h; sourceTree = "<group>"; };
-		A53A87E51E6E813000A9B202 /* JSlideGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSlideGestureRecognizer.m; sourceTree = "<group>"; };
-		A53A87E61E6E813000A9B202 /* JSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JSlideView.h; sourceTree = "<group>"; };
-		A53A87E71E6E813000A9B202 /* JSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JSlideView.m; sourceTree = "<group>"; };
 		A53A87EB1E6E834000A9B202 /* TableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableViewController.h; sourceTree = "<group>"; };
 		A53A87EC1E6E834000A9B202 /* TableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableViewController.m; sourceTree = "<group>"; };
+		A54D91C11E728EFB0019805B /* AJSlideGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSlideGestureRecognizer.h; sourceTree = "<group>"; };
+		A54D91C21E728EFB0019805B /* AJSlideGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSlideGestureRecognizer.m; sourceTree = "<group>"; };
+		A54D91C31E728EFB0019805B /* AJSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AJSlideView.h; sourceTree = "<group>"; };
+		A54D91C41E728EFB0019805B /* AJSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AJSlideView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,7 +48,7 @@
 		A53A87B41E6E7F0000A9B202 = {
 			isa = PBXGroup;
 			children = (
-				A53A87E11E6E813000A9B202 /* JSlideCell */,
+				A54D91C01E728EFB0019805B /* AJSlideCell */,
 				A53A87BF1E6E7F0000A9B202 /* testCell */,
 				A53A87BE1E6E7F0000A9B202 /* Products */,
 			);
@@ -86,15 +86,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		A53A87E11E6E813000A9B202 /* JSlideCell */ = {
+		A54D91C01E728EFB0019805B /* AJSlideCell */ = {
 			isa = PBXGroup;
 			children = (
-				A53A87E41E6E813000A9B202 /* JSlideGestureRecognizer.h */,
-				A53A87E51E6E813000A9B202 /* JSlideGestureRecognizer.m */,
-				A53A87E61E6E813000A9B202 /* JSlideView.h */,
-				A53A87E71E6E813000A9B202 /* JSlideView.m */,
+				A54D91C11E728EFB0019805B /* AJSlideGestureRecognizer.h */,
+				A54D91C21E728EFB0019805B /* AJSlideGestureRecognizer.m */,
+				A54D91C31E728EFB0019805B /* AJSlideView.h */,
+				A54D91C41E728EFB0019805B /* AJSlideView.m */,
 			);
-			path = JSlideCell;
+			path = AJSlideCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,10 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A53A87E91E6E813000A9B202 /* JSlideGestureRecognizer.m in Sources */,
 				A53A87C51E6E7F0000A9B202 /* AppDelegate.m in Sources */,
-				A53A87EA1E6E813000A9B202 /* JSlideView.m in Sources */,
 				A53A87ED1E6E834000A9B202 /* TableViewController.m in Sources */,
+				A54D91C51E728EFB0019805B /* AJSlideGestureRecognizer.m in Sources */,
+				A54D91C61E728EFB0019805B /* AJSlideView.m in Sources */,
 				A53A87C21E6E7F0000A9B202 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,6 +330,7 @@
 				A53A87D61E6E7F0000A9B202 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

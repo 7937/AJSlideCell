@@ -6,9 +6,9 @@
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "JSlideView.h"
+#import "AJSlideView.h"
 
-@implementation JSlideView
+@implementation AJSlideView
 
 - (instancetype)init{
     if (self = [super init]) {

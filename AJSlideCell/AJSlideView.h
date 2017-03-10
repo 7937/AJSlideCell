@@ -15,7 +15,7 @@ typedef NS_ENUM(NSInteger, SlideViewType){
     SlideViewTypeDidDone
 };
 
-@interface JSlideView : UIView
+@interface AJSlideView : UIView
 
 @property (nonatomic, assign) SlideViewType viewType;
 

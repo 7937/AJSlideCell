@@ -7,7 +7,7 @@
 //
 
 #import "TableViewController.h"
-#import "JSlideGestureRecognizer.h"
+#import "AJSlideGestureRecognizer.h"
 
 NSString *const cellReuseID = @"cell reuse ID";
 
@@ -38,7 +38,7 @@ NSString *const cellReuseID = @"cell reuse ID";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellReuseID forIndexPath:indexPath];
     cell.textLabel.text = textArr[indexPath.row];
-    JSlideGestureRecognizer *recognizer = [[JSlideGestureRecognizer alloc]initWithArray:textArr];
+    AJSlideGestureRecognizer *recognizer = [[AJSlideGestureRecognizer alloc]initWithArray:textArr];
     
     [cell addGestureRecognizer:recognizer];
     return cell;
