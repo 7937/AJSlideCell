@@ -19,13 +19,6 @@ typedef NS_ENUM(NSInteger, SlideViewType){
 
 @property (nonatomic, assign) SlideViewType viewType;
 
-@property (nonatomic) UIColor *inactiveRightColor;
-@property (nonatomic) UIColor *activeRightColor;
-@property (nonatomic) UIColor *inactiveLeftColor;
-@property (nonatomic) UIColor *activeleftColor;
-
-
-
 - (void)setTypeOfSlideView:(SlideViewType )type;
 - (NSInteger)activeSlideView:(CGFloat )currentX;
 

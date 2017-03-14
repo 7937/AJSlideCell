@@ -10,26 +10,18 @@
 
 @implementation AJSlideView
 
-- (instancetype)init{
-    if (self = [super init]) {
-        
-    }
-    return self;
-}
-
-
 - (void)setTypeOfSlideView:(SlideViewType )type{
     switch (type) {
-        case 0:
+        case SlideViewTypeWillDelete:
             self.backgroundColor = [UIColor colorWithRed:0.96 green:0.31 blue:0.18 alpha:0.1];
             break;
-        case 1:
+        case SlideViewTypeDidDelete:
             self.backgroundColor = [UIColor colorWithRed:0.96 green:0.31 blue:0.18 alpha:1.00];
             break;
-        case 2:
+        case SlideViewTypeWillDone:
             self.backgroundColor = [UIColor colorWithRed:0.53 green:0.82 blue:0.40 alpha:0.1];
             break;
-        case 3:
+        case SlideViewTypeDidDone:
             self.backgroundColor = [UIColor colorWithRed:0.53 green:0.82 blue:0.40 alpha:1.00];
             break;
         default:

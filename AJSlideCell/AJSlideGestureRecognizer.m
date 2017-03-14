@@ -8,8 +8,8 @@
 
 #import "AJSlideGestureRecognizer.h"
 
-#define ScreenWidth [UIScreen mainScreen].bounds.size.width
-#define CellHeight self.cell.frame.size.height
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define CELL_HEIGHT self.cell.frame.size.height
 
 @interface AJSlideGestureRecognizer()<UIGestureRecognizerDelegate>{
     CGFloat currentX;
@@ -62,14 +62,14 @@
         CGFloat slideViewX;
         
         if (currentX > 0) {
-            slideViewX = currentX -ScreenWidth;
+            slideViewX = currentX -SCREEN_WIDTH;
         }else{
-            slideViewX = currentX +ScreenWidth;
+            slideViewX = currentX +SCREEN_WIDTH;
         }
         
         self.cell.center = CGPointMake(self.cell.frame.size.width/2.f+currentX, self.cell.center.y);
         
-        self.slideView.frame = CGRectMake(slideViewX, self.cell.center.y-CellHeight/2.f, ScreenWidth, CellHeight);
+        self.slideView.frame = CGRectMake(slideViewX, self.cell.center.y-CELL_HEIGHT/2.f, SCREEN_WIDTH, CELL_HEIGHT);
         
         switch ([_slideView activeSlideView:currentX]) {
             case 0:
@@ -125,21 +125,21 @@
 - (void)positiveOfDoneAction{
     [UIView animateWithDuration:0.3 animations:^{
         self.cell.frame = beginCell;
-        self.slideView.frame = CGRectMake(-ScreenWidth, self.cell.center.y-CellHeight/2.f, ScreenWidth, CellHeight);
+        self.slideView.frame = CGRectMake(-SCREEN_WIDTH, self.cell.center.y-CELL_HEIGHT/2.f, SCREEN_WIDTH, CELL_HEIGHT);
     }];
 }
 
 - (void)positiveOfDeleteAction{
     [UIView animateWithDuration:0.3 animations:^{
         self.cell.frame = beginCell;
-        self.slideView.frame = CGRectMake(ScreenWidth, self.cell.center.y-CellHeight/2.f, ScreenWidth, CellHeight);
+        self.slideView.frame = CGRectMake(SCREEN_WIDTH, self.cell.center.y-CELL_HEIGHT/2.f, SCREEN_WIDTH, CELL_HEIGHT);
     }];
 }
 
 
 - (void)dismissActionView {
     [UIView animateWithDuration:(0.5) animations:^{
-        self.slideView.frame = CGRectMake(0, self.cell.center.y-CellHeight/2.f, ScreenWidth, CellHeight);
+        self.slideView.frame = CGRectMake(0, self.cell.center.y-CELL_HEIGHT/2.f, SCREEN_WIDTH, CELL_HEIGHT);
     } completion:^(BOOL finished) {
         [self.slideView removeFromSuperview];
         self.slideView.alpha = 1;
